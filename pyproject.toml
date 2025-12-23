@@ -16,17 +16,34 @@ dependencies = [
     "flask>=3.0.0",
     "markdownify==1.1.0",
     "openai>=2.2.0",
+    "pandas",
     "pillow>=10.2.0",
     "pydantic>=2.12.0",
     "pydantic-settings>=2.11.0",
     "pypdfium2>=4.30.0",
     "python-dotenv>=1.1.1",
     "qwen-vl-utils>=0.0.14",
+    "scikit-learn",
+    "seaborn",
     "torch>=2.8.0",
     "torchvision>=0.23.0",
     "transformers>=4.57.1",
     "streamlit>=1.50.0",
     "accelerate>=1.11.0",
+    "ipykernel>=7.1.0",
+    "vietnam-qr-pay>=1.0.0",
+    "google-cloud-vision>=3.11.0",
+    "qrcode>=8.2",
+    "pymupdf>=1.26.6",
+    "pytesseract>=0.3.13",
+    "lxml>=6.0.2",
+    "vietocr>=0.3.12",
+    "safetensors",
+    "timm>=1.0.22",
+    "openpyxl>=3.1.5",
+    "python-docx>=1.2.0",
+    "reportlab>=4.4.6",
+    "paddleocr>=3.3.2",
 ]
 
 [build-system]
@@ -41,6 +58,9 @@ chandra_vllm = "chandra.scripts.vllm:main"
 
 [tool.setuptools.packages.find]
 include = ["chandra*"]
+
+[tool.uv.sources]
+safetensors = { url = "https://paddle-whl.bj.bcebos.com/nightly/cu126/safetensors/safetensors-0.6.2.dev0-cp38-abi3-linux_x86_64.whl" }
 
 [dependency-groups]
 dev = [
